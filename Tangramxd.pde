@@ -401,36 +401,4 @@ void draw(){
   fill(80,20,170);
   PintarParalelogramo();
   GanoJuego();
-  
-  /*/Triangulo mediano
-  circle(640,520,20);
-  circle(800,520,20);
-  circle(800,560,20);
-  circle(640,560,20);
-  
-  //Triangulo grande
-  circle(680,430,20);
-  
-  //Triangulo grande
-  circle(720,550,20);
-  circle(720,530,20);
-  
-  //triangulo pequeno2
-  circle(780,500,20);
-  circle(620,540,20);
-  circle(660,580,20);
-  circle(780,580,20);
-  
-  //Triangulo pequeno1
-  circle(820,540,20);
-  circle(660,500,20);
-  circle(620,540,20);
-  circle(820,540,20);
-  
-  //paralelogramo
-  circle(798,438,20);
-  
-  //cuadrado
- 
-  circle(756,351,20);
-*/}
+  }
