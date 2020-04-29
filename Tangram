@@ -461,49 +461,49 @@ void PintarCuadrado(){
 }  
 
 void GanoJuego(){
-  if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
+  if((dist(posxTG1, posyTG1,720,550)<5 || dist(posxTG1, posyTG1,680,430)<5) && dist(posxP,posyP,798,438)<5 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
     gano=true;
     background(255);
     textSize(50);
     text("Felicidades, lo Lograste!", 50, 50);
   }else{
-     if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
+     if((dist(posxTG1, posyTG1,720,550)<5 || dist(posxTG1, posyTG1,680,430)<5) && dist(posxP,posyP,798,438)<5 && (dist(posxTG2, posyTG2,720,550)<5 || dist(posxTG2, posyTG2,680,430)<5) && dist(posxC,posyC,756,351)<5 && dist(posxTM,posyTM,640,520)<5 && (dist(posxTP1, posyTP1,820,540)<5 || dist(posxTP1, posyTP1,780,500)<5) && (dist(posxTP2, posyTP2,820,540)<5 || dist(posxTP2, posyTP2,780,500)<5) ){
        gano=true;
        background(255);
        textSize(50);
        text("Felicidades, lo Lograste!", 50, 50);
      }else{
-        if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
+        if((dist(posxTG1, posyTG1,720,550)<5 || dist(posxTG1, posyTG1,680,430)<5) && dist(posxP,posyP,798,438)<5 && (dist(posxTG2, posyTG2,720,550)<5 || dist(posxTG2, posyTG2,680,430)<5) && dist(posxC,posyC,756,351)<5 && dist(posxTM,posyTM,640,520)<5 && (dist(posxTP1, posyTP1,820,540)<5 || dist(posxTP1, posyTP1,780,500)<5) && (dist(posxTP2, posyTP2,820,540)<5 || dist(posxTP2, posyTP2,780,500)<5) ){
           gano=true;
           background(255);
           textSize(50);
           text("Felicidades, lo Lograste!", 50, 50);
         }else{
-           if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){ 
+           if((dist(posxTG1, posyTG1,720,550)<5 || dist(posxTG1, posyTG1,680,430)<5) && dist(posxP,posyP,798,438)<5 && (dist(posxTG2, posyTG2,720,550)<5 || dist(posxTG2, posyTG2,680,430)<5) && dist(posxC,posyC,756,351)<5 && dist(posxTM,posyTM,640,520)<5 && (dist(posxTP1, posyTP1,820,540)<5 || dist(posxTP1, posyTP1,780,500)<5) && (dist(posxTP2, posyTP2,820,540)<5 || dist(posxTP2, posyTP2,780,500)<5) ){ 
              gano=true;
              background(255);
              textSize(50);
              text("Felicidades, lo Lograste!", 50, 50);
            }else{
-            if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){ 
+            if((dist(posxTG1, posyTG1,720,550)<5 || dist(posxTG1, posyTG1,680,430)<5) && dist(posxP,posyP,798,438)<5 && (dist(posxTG2, posyTG2,720,550)<5 || dist(posxTG2, posyTG2,680,430)<5) && dist(posxC,posyC,756,351)<5 && dist(posxTM,posyTM,640,520)<5 && (dist(posxTP1, posyTP1,820,540)<5 || dist(posxTP1, posyTP1,780,500)<5) && (dist(posxTP2, posyTP2,820,540)<5 || dist(posxTP2, posyTP2,780,500)<5) ){ 
              gano=true;
              background(255);
              textSize(50);
              text("Felicidades, lo Lograste!", 50, 50);
             }else{
-              if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
+              if((dist(posxTG1, posyTG1,720,550)<5 || dist(posxTG1, posyTG1,680,430)<5) && dist(posxP,posyP,798,438)<5 && (dist(posxTG2, posyTG2,720,550)<5 || dist(posxTG2, posyTG2,680,430)<5) && dist(posxC,posyC,756,351)<5 && dist(posxTM,posyTM,640,520)<5 && (dist(posxTP1, posyTP1,820,540)<5 || dist(posxTP1, posyTP1,780,500)<5) && (dist(posxTP2, posyTP2,820,540)<5 || dist(posxTP2, posyTP2,780,500)<5) ){
                 gano=true;
                 background(255);
                 textSize(50);
                 text("Felicidades, lo Lograste!", 50, 50);
               }else{
-                if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
+                if((dist(posxTG1, posyTG1,720,550)<5 || dist(posxTG1, posyTG1,680,430)<5) && dist(posxP,posyP,798,438)<5 && (dist(posxTG2, posyTG2,720,550)<5 || dist(posxTG2, posyTG2,680,430)<5) && dist(posxC,posyC,756,351)<5 && dist(posxTM,posyTM,640,520)<5 && (dist(posxTP1, posyTP1,820,540)<5 || dist(posxTP1, posyTP1,780,500)<5) && (dist(posxTP2, posyTP2,820,540)<5 || dist(posxTP2, posyTP2,780,500)<5) ){
                   gano=true;
                   background(255);
                   textSize(50);
                   text("Felicidades, lo Lograste!", 50, 50);
                 }else{
-                  if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
+                  if((dist(posxTG1, posyTG1,720,550)<5 || dist(posxTG1, posyTG1,680,430)<5) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
                     gano=true;
                     background(255);
                     textSize(50);
@@ -524,7 +524,6 @@ void GanoJuego(){
   }
 }
 
-  
 void setup(){
   size(900,900,P2D);
 }
