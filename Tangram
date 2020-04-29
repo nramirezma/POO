@@ -1,5 +1,9 @@
 boolean gano=true;
 
+//Para hacer que las figuras queden estaticas, seria poner que cuando se acercaran a tal punto, esta como que haga tp al 
+//lugar correspondiente y cancelamos el movimiento, y para que no se solapen seria que si se acercan mucho los puntos entre
+//ellos los movemos
+
 //TrianguloGrande1
 float angleTG1=0;
 int posxTG1=220;
@@ -150,7 +154,7 @@ void PintarTrianguloGrande1(){
   PintarTrianguloPequeno2();
   fill(255,255,0);
   PintarTrianguloPequeno1();
-  fill(60,60,60);
+  fill(100,60,60);
   PintarCuadrado();
   fill(255,0,128);
   PintarTrianguloMediano();
@@ -200,7 +204,7 @@ void PintarParalelogramo(){
   PintarTrianguloPequeno2();
   fill(255,255,0);
   PintarTrianguloPequeno1();
-  fill(60,60,60);
+  fill(100,60,60);
   PintarCuadrado();
   fill(255,0,128);
   PintarTrianguloMediano();
@@ -256,7 +260,7 @@ void PintarTrianguloGrande2(){
   PintarTrianguloPequeno2();
   fill(255,255,0);
   PintarTrianguloPequeno1();
-  fill(60,60,60);
+  fill(100,60,60);
   PintarCuadrado();
   fill(255,0,128);
   PintarTrianguloMediano();
@@ -310,7 +314,7 @@ void PintarTrianguloMediano(){
   PintarTrianguloPequeno2();
   fill(255,255,0);
   PintarTrianguloPequeno1();
-  fill(60,60,60);
+  fill(100,60,60);
   PintarCuadrado();
   fill(255,0,128);
   push();
@@ -431,27 +435,12 @@ void PintarCuadrado(){
   posyC=mouseY;
   
   push();
-  fill(255);
-  stroke(0);
-  noStroke();
-  beginShape();
-  vertex(600,600);
-  vertex(840,600);
-  vertex(840,480);
-  vertex(882,480);
-  vertex(798,393);
-  vertex(798,308);
-  vertex(713,308);
-  vertex(713,393);
-  vertex(680,360);
-  vertex(560,480);
-  vertex(600,480);
-  endShape(CLOSE);
+ 
   fill(255,255,0);
   PintarTrianguloPequeno1();
   fill(255,112,40);
   PintarTrianguloPequeno2();
-  fill(60,60,60);
+  fill(100,60,60);
   translate(posxC,posyC);
   rotate(angleC);
   quad(0,-60,60,0,0,60,-60,0);
@@ -472,53 +461,53 @@ void PintarCuadrado(){
 }  
 
 void GanoJuego(){
-  if(dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxTP1,posyTP1,820,540)<13 && dist(posxTP2,posyTP2,780,500)<20){
+  if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
     gano=true;
-    fill(255, 255, 255);
+    background(255);
     textSize(50);
-    text("Felicidades,lo lograste", 50, 50);
+    text("Felicidades, lo Lograste!", 50, 50);
   }else{
-     if(dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTP1,posyTP1,820,540)<20){
+     if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
        gano=true;
-       fill(255, 255, 255);
+       background(255);
        textSize(50);
-       text("Felicidades,lo lograste", 50, 50);
+       text("Felicidades, lo Lograste!", 50, 50);
      }else{
-        if(dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20){
+        if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
           gano=true;
-          fill(255, 255, 255);
+          background(255);
           textSize(50);
-          text("Felicidades,lo lograste", 50, 50);
+          text("Felicidades, lo Lograste!", 50, 50);
         }else{
-           if(dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTP1,posyTP1,820,540)<20){ 
+           if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){ 
              gano=true;
-             fill(255, 255, 255);
+             background(255);
              textSize(50);
-             text("Felicidades,lo lograste", 50, 50);
+             text("Felicidades, lo Lograste!", 50, 50);
            }else{
-            if(dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20){ 
+            if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){ 
              gano=true;
-             fill(255, 255, 255);
+             background(255);
              textSize(50);
-             text("Felicidades,lo lograste", 50, 50);
+             text("Felicidades, lo Lograste!", 50, 50);
             }else{
-              if(dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20  && dist(posxTG2,posyTG2,680,430)<20){
+              if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
                 gano=true;
-                fill(255, 255, 255);
+                background(255);
                 textSize(50);
-                text("Felicidades,lo lograste", 50, 50);
+                text("Felicidades, lo Lograste!", 50, 50);
               }else{
-                if(dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTG1, posyTG1,720,550)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxP,posyP,798,438)<20){
+                if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
                   gano=true;
-                  fill(255, 255, 255);
+                  background(255);
                   textSize(50);
-                  text("Felicidades,lo lograste", 50, 50);
+                  text("Felicidades, lo Lograste!", 50, 50);
                 }else{
-                  if(dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTG1, posyTG1,720,550)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxP,posyP,798,438)<20){
+                  if((dist(posxTG1, posyTG1,720,550)<3 || dist(posxTG1, posyTG1,680,430)<3) && dist(posxP,posyP,798,438)<3 && (dist(posxTG2, posyTG2,720,550)<3 || dist(posxTG2, posyTG2,680,430)<3) && dist(posxC,posyC,756,351)<3 && dist(posxTM,posyTM,640,520)<3 && (dist(posxTP1, posyTP1,820,540)<3 || dist(posxTP1, posyTP1,780,500)<3) && (dist(posxTP2, posyTP2,820,540)<3 || dist(posxTP2, posyTP2,780,500)<3) ){
                     gano=true;
-                    fill(255, 255, 255);
+                    background(255);
                     textSize(50);
-                    text("Felicidades,lo lograste", 50, 50);
+                    text("Felicidades, lo Lograste!", 50, 50);
                   }else{
                     gano=false;
                     fill(255, 255, 255);
@@ -542,11 +531,27 @@ void setup(){
 
 void draw(){
   background(0,10,5);
+  fill(255);
+  stroke(0);
+  noStroke();
+  beginShape();
+  vertex(600,600);
+  vertex(840,600);
+  vertex(840,480);
+  vertex(882,480);
+  vertex(798,393);
+  vertex(798,308);
+  vertex(713,308);
+  vertex(713,393);
+  vertex(680,360);
+  vertex(560,480);
+  vertex(600,480);
+  endShape(CLOSE);
   fill(255,112,40);
   PintarTrianguloPequeno2();
   fill(255,255,0);
   PintarTrianguloPequeno1();
-  fill(60,60,60);
+  fill(100,60,60);
   PintarCuadrado();
   fill(255,0,128);
   PintarTrianguloMediano();
