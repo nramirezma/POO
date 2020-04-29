@@ -63,7 +63,7 @@ void keyReleased(){
       if(angleP==PI){
         angleP=0;
       }else{
-        angleP = angleP + PI/4;
+        angleP = angleP - PI/4;
         delay(100);
       }
     }
