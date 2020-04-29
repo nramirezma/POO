@@ -401,4 +401,4 @@ void draw(){
   fill(80,20,170);
   PintarParalelogramo();
   GanoJuego();
-  }
+}
