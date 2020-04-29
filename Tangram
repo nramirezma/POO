@@ -1,4 +1,4 @@
-boolean gano=false;
+boolean gano=true;
 
 //TrianguloGrande1
 float angleTG1=0;
@@ -472,31 +472,59 @@ void PintarCuadrado(){
 }  
 
 void GanoJuego(){
-  if(dist(posxTG1, posyTG1,720,550)<13 && dist(posxP,posyP,798,438)<13 && dist(posxTG2,posyTG2,680,430)<13 && dist(posxC,posyC,756,351)<13 && dist(posxTM,posyTM,640,520)<13 && dist(posxTP1,posyTP1,820,540)<13 && dist(posxTP2,posyTP2,780,500)<13){
+  if(dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxTP1,posyTP1,820,540)<13 && dist(posxTP2,posyTP2,780,500)<20){
     gano=true;
+    fill(255, 255, 255);
+    textSize(50);
+    text("Felicidades,lo lograste", 50, 50);
   }else{
-     if(dist(posxTG1, posyTG1,720,550)<13 && dist(posxP,posyP,798,438)<13 && dist(posxTG2,posyTG2,680,430)<13 && dist(posxC,posyC,756,351)<13 && dist(posxTM,posyTM,640,520)<13 && dist(posxTP2,posyTP2,780,500)<13 && dist(posxTP1,posyTP1,820,540)<13){
+     if(dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTP1,posyTP1,820,540)<20){
        gano=true;
+       fill(255, 255, 255);
+       textSize(50);
+       text("Felicidades,lo lograste", 50, 50);
      }else{
-        if(dist(posxTG1, posyTG1,720,550)<13 && dist(posxP,posyP,798,438)<13 && dist(posxTG2,posyTG2,680,430)<13 && dist(posxTM,posyTM,640,520)<13 && dist(posxC,posyC,756,351)<13 && dist(posxTP1,posyTP1,820,540)<13 && dist(posxTP2,posyTP2,780,500)<13){
+        if(dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20){
           gano=true;
+          fill(255, 255, 255);
+          textSize(50);
+          text("Felicidades,lo lograste", 50, 50);
         }else{
-           if(dist(posxTG1, posyTG1,720,550)<13 && dist(posxP,posyP,798,438)<13 && dist(posxTG2,posyTG2,680,430)<13 && dist(posxTM,posyTM,640,520)<13 && dist(posxC,posyC,756,351)<13 && dist(posxTP2,posyTP2,780,500)<13 && dist(posxTP1,posyTP1,820,540)<13){ 
+           if(dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTP1,posyTP1,820,540)<20){ 
              gano=true;
+             fill(255, 255, 255);
+             textSize(50);
+             text("Felicidades,lo lograste", 50, 50);
            }else{
-            if(dist(posxTP1,posyTP1,820,540)<13 && dist(posxTP2,posyTP2,780,500)<13 && dist(posxTG1, posyTG1,720,550)<13 && dist(posxP,posyP,798,438)<13 && dist(posxTG2,posyTG2,680,430)<13 && dist(posxC,posyC,756,351)<13 && dist(posxTM,posyTM,640,520)<13){ 
+            if(dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20){ 
              gano=true;
+             fill(255, 255, 255);
+             textSize(50);
+             text("Felicidades,lo lograste", 50, 50);
             }else{
-              if(dist(posxTP1,posyTP1,820,540)<13 && dist(posxTP2,posyTP2,780,500)<13 && dist(posxTG1, posyTG1,720,550)<13 && dist(posxP,posyP,798,438)<13 && dist(posxC,posyC,756,351)<13 && dist(posxTM,posyTM,640,520)<13  && dist(posxTG2,posyTG2,680,430)<13){
+              if(dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTG1, posyTG1,720,550)<20 && dist(posxP,posyP,798,438)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20  && dist(posxTG2,posyTG2,680,430)<20){
                 gano=true;
+                fill(255, 255, 255);
+                textSize(50);
+                text("Felicidades,lo lograste", 50, 50);
               }else{
-                if(dist(posxTP1,posyTP1,820,540)<13 && dist(posxTP2,posyTP2,780,500)<13 && dist(posxTG1, posyTG1,720,550)<13 && dist(posxTG2,posyTG2,680,430)<13 && dist(posxC,posyC,756,351)<13 && dist(posxTM,posyTM,640,520)<13 && dist(posxP,posyP,798,438)<13){
+                if(dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxTG1, posyTG1,720,550)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxP,posyP,798,438)<20){
                   gano=true;
+                  fill(255, 255, 255);
+                  textSize(50);
+                  text("Felicidades,lo lograste", 50, 50);
                 }else{
-                  if(dist(posxTP1,posyTP1,820,540)<13 && dist(posxTP2,posyTP2,780,500)<13 && dist(posxC,posyC,756,351)<13 && dist(posxTG1, posyTG1,720,550)<13 && dist(posxTG2,posyTG2,680,430)<13 && dist(posxTM,posyTM,640,520)<13 && dist(posxP,posyP,798,438)<13){
+                  if(dist(posxTP1,posyTP1,820,540)<20 && dist(posxTP2,posyTP2,780,500)<20 && dist(posxC,posyC,756,351)<20 && dist(posxTG1, posyTG1,720,550)<20 && dist(posxTG2,posyTG2,680,430)<20 && dist(posxTM,posyTM,640,520)<20 && dist(posxP,posyP,798,438)<20){
                     gano=true;
+                    fill(255, 255, 255);
+                    textSize(50);
+                    text("Felicidades,lo lograste", 50, 50);
                   }else{
                     gano=false;
+                    fill(255, 255, 255);
+                    textSize(50);
+                    text("Revisa el Tangram,Crack", 50, 50);
+                    
                   }
                 }
               }
@@ -507,18 +535,6 @@ void GanoJuego(){
   }
 }
 
-
-void MensajeGanador(){
-  if(gano==true){
-    fill(255, 255, 255);
-    textSize(75);
-    text("Felicidades,completaste el Tangram", 50, 50);
-  }else{
-    fill(255, 255, 255);
-    textSize(75);
-    text("Revisa el Tangram", 50, 50);
-  }
-}
   
 void setup(){
   size(900,900,P2D);
@@ -540,5 +556,5 @@ void draw(){
   PintarTrianguloGrande2();
   fill(80,20,170);
   PintarParalelogramo();
-  MensajeGanador();
+  GanoJuego();
 }
