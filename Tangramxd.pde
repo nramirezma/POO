@@ -402,8 +402,6 @@ void draw(){
   PintarParalelogramo();
   GanoJuego();
   
-   fill(10);
-  
   /*/Triangulo mediano
   circle(640,520,20);
   circle(800,520,20);
