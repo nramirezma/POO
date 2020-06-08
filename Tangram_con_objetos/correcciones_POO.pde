@@ -47,9 +47,7 @@ void setup() {
   N1 = new Boton(100, 4*height/5, b1, 250, 120);
   N2 = new Boton(700, 4*height/5, b2, 250, 120);
   CR = new Boton(400, 4*height/5, bc, 250, 120);
-
-
-  img= loadImage("casa_poo.png");
+  
 }
 
 void draw(){
@@ -214,10 +212,7 @@ void draw(){
       accionado = false;
 
       figura = true;
-
-
       }
-
 
   }
 
